@@ -79,6 +79,8 @@ nav.scrolled{box-shadow:0 4px 32px rgba(22,128,60,0.1)}
 .nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center}
 .nav-links a{font-size:.8rem;font-weight:600;letter-spacing:.02em;text-decoration:none;color:var(--muted);transition:color .2s}
 .nav-links a:hover{color:var(--royal)}
+.nav-login{background:transparent;color:var(--ink) !important;padding:.55rem 1.2rem;border-radius:var(--r-sm);font-weight:700;font-size:.78rem;letter-spacing:.04em;border:1.5px solid var(--border);transition:border-color .2s,color .2s,transform .15s}
+.nav-login:hover{border-color:var(--royal);color:var(--royal) !important;transform:translateY(-1px)}
 .nav-cta{background:var(--royal);color:#fff !important;padding:.55rem 1.4rem;border-radius:var(--r-sm);font-weight:700;font-size:.78rem;letter-spacing:.04em;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 16px rgba(22,128,60,0.3)}
 .nav-cta:hover{background:var(--navy)!important;transform:translateY(-2px) scale(1.02);box-shadow:0 8px 28px rgba(22,128,60,0.45)}
 
@@ -430,6 +432,7 @@ footer{background:var(--ink);padding:3rem 5vw}
     <li><a href="#integrations">Intégrations</a></li>
     <li><a href="#tarifs">Tarifs</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a href="#" class="nav-login">Se connecter</a></li>
     <li><a href="#contact" class="nav-cta">Demander une démo →</a></li>
   </ul>
 </nav>
@@ -651,7 +654,7 @@ footer{background:var(--ink);padding:3rem 5vw}
     <div class="faq-item"><button class="faq-btn">En quoi RetailFlowATS est-il différent des autres ATS du marché ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">La plupart des ATS sont pensés pour les profils de bureau : cadres, fonctions support, métiers tech. RetailFlowATS est un ATS à part entière — pipeline, vivier candidats, gestion des offres, reporting, workflow collaboratif — auquel s'ajoute une couche sectorielle unique. Les métiers de la grande distribution, de l'industrie et du commerce de terrain ont des contraintes bien spécifiques. <strong>CACES, habilitations, travail en 3×8, volume élevé, forte rotation</strong>. Nous avons intégré ces réalités nativement : filtres par certification, gestion des plannings décalés, modèles de fiches de poste sectoriels. RetailFlowATS n'est pas une surcouche sur un autre outil. C'est un ATS natif, développé de zéro, avec les fonctionnalités complètes d'un ATS moderne et une expertise sectorielle intégrée dès la conception.</div></div></div>
     <div class="faq-item"><button class="faq-btn">Sur quelles plateformes d'emploi êtes-vous connectés ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">RetailFlowATS est actuellement connecté à <strong>France Travail et APEC</strong>. D'autres intégrations sont en cours de déploiement, dont Indeed, Distrijob, LinkedIn et Hellowork. Nous enrichissons régulièrement notre catalogue de connecteurs et vous serez informés à chaque nouvelle mise à disposition.</div></div></div>
     <div class="faq-item"><button class="faq-btn">Combien de temps faut-il pour déployer RetailFlowATS ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">L'onboarding est rapide et encadré. En moyenne, nos clients sont <strong>opérationnels en 5 à 10 jours ouvrés</strong> après la signature du contrat. Cela comprend la configuration de votre espace, l'import de vos données existantes, la formation de vos équipes RH et le paramétrage de vos intégrations jobboards. Un Customer Success Manager dédié vous accompagne tout au long du déploiement.</div></div></div>
-    <div class="faq-item"><button class="faq-btn">La solution est-elle conforme au RGPD ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">Oui, sans compromis. RetailFlowATS est <strong>hébergé sur des serveurs en France</strong>, dans des datacenters certifiés ISO 27001. Les données des candidats sont conservées dans le strict respect du RGPD : durées de conservation configurables, droit à l'oubli intégré, traçabilité complète des accès. Nous fournissons notre DPA sur demande. La conformité est un pilier de notre architecture, pas une option.</div></div></div>
+    <div class="faq-item"><button class="faq-btn">La solution est-elle conforme au RGPD ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">Oui, sans compromis. RetailFlowATS est <strong>hébergé sur des serveurs en France</strong>. Les données des candidats sont conservées dans le strict respect du RGPD : durées de conservation configurables, droit à l'oubli intégré, traçabilité complète des accès. Nous fournissons notre DPA sur demande. La conformité est un pilier de notre architecture, pas une option.</div></div></div>
     <div class="faq-item"><button class="faq-btn">Peut-on connecter RetailFlowATS à nos outils internes ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">Oui. RetailFlowATS dispose d'une <strong>API REST ouverte</strong> qui permet de s'interconnecter avec vos outils internes existants. Si vous avez un besoin spécifique, notre équipe technique peut développer un connecteur sur mesure dans le cadre de votre projet.</div></div></div>
     <div class="faq-item"><button class="faq-btn">Y a-t-il un engagement de durée minimum ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">Nous proposons des <strong>contrats annuels</strong>, avec possibilité d'engagement sur 2 ou 3 ans pour bénéficier de conditions préférentielles. Chaque contrat est précédé d'une période de découverte avec notre équipe avant signature, pour s'assurer que RetailFlowATS correspond exactement à vos besoins. Pas de mauvaise surprise.</div></div></div>
     <div class="faq-item"><button class="faq-btn">Proposez-vous une démo avant de signer ?<div class="faq-icon"></div></button><div class="faq-body"><div class="faq-inner">Bien sûr. Nous organisons des <strong>démonstrations personnalisées de 45 minutes</strong>, adaptées à votre secteur et à vos enjeux concrets. Notre équipe peut configurer un environnement de test avec vos propres données. Aucun engagement, aucune carte bleue requise.</div></div></div>
@@ -692,7 +695,7 @@ footer{background:var(--ink);padding:3rem 5vw}
   </div>
   <div class="footer-bottom">
     <p>© 2025 RetailFlowATS SAS. Tous droits réservés. Hébergement France 🇫🇷</p>
-    <div class="footer-badge"><span>RGPD ✓</span><span>ISO 27001</span><span>Hébergé en France</span></div>
+    <div class="footer-badge"><span>RGPD ✓</span><span>Hébergé en France</span></div>
   </div>
 </footer>
 
